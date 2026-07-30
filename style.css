@@ -134,9 +134,13 @@ justify-content:center;
 
 padding:0 8%;
 
-gap:60px;
+gap:clamp(40px,8vw,120px);
 
 flex-wrap:wrap;
+
+max-width:1400px;
+
+margin:0 auto;
 
 }
 
@@ -147,6 +151,8 @@ flex-wrap:wrap;
 flex:1 1 500px;
 
 max-width:650px;
+
+margin-right:auto;
 
 }
 
@@ -237,6 +243,8 @@ border-radius:30px;
 
 box-shadow:0 0 50px rgba(212,175,55,.08);
 
+margin-left:auto;
+
 }
 
 
@@ -310,6 +318,10 @@ gap:25px;
 max-width:1200px;
 
 margin:0 auto;
+
+justify-content:center;
+
+align-items:stretch;
 
 }
 
@@ -460,6 +472,22 @@ color:#777;
 
 
 
+/* DESKTOP LARGE */
+
+@media(min-width:1200px){
+
+.cards{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+
+
+
+
 /* MOBILE */
 
 
@@ -501,6 +529,8 @@ padding-top:70px;
 
 gap:30px;
 
+max-width:100%;
+
 }
 
 
@@ -510,6 +540,8 @@ gap:30px;
 flex:unset;
 
 max-width:100%;
+
+margin-right:0;
 
 }
 
@@ -530,6 +562,8 @@ flex:unset;
 width:100%;
 
 max-width:400px;
+
+margin-left:0;
 
 }
 
@@ -564,4 +598,6 @@ max-width:100%;
 .btn .fa-whatsapp {
     font-size: 20px;
     margin-right: 8px;
+}
+
 }
