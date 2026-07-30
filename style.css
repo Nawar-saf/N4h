@@ -130,17 +130,21 @@ display:flex;
 
 align-items:center;
 
-justify-content:space-between;
+justify-content:center;
 
 padding:0 8%;
 
 gap:60px;
+
+flex-wrap:wrap;
 
 }
 
 
 
 .hero-text{
+
+flex:1 1 500px;
 
 max-width:650px;
 
@@ -221,7 +225,7 @@ transform:translateY(-5px);
 
 .hero-card{
 
-width:350px;
+flex:0 0 350px;
 
 padding:40px;
 
@@ -299,9 +303,13 @@ margin-bottom:55px;
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
 gap:25px;
+
+max-width:1200px;
+
+margin:0 auto;
 
 }
 
@@ -491,6 +499,18 @@ text-align:center;
 
 padding-top:70px;
 
+gap:30px;
+
+}
+
+
+
+.hero-text{
+
+flex:unset;
+
+max-width:100%;
+
 }
 
 
@@ -505,7 +525,11 @@ font-size:38px;
 
 .hero-card{
 
+flex:unset;
+
 width:100%;
+
+max-width:400px;
 
 }
 
@@ -531,6 +555,8 @@ font-size:32px;
 
 grid-template-columns:1fr;
 
+max-width:100%;
+
 }
 
 
@@ -538,27 +564,4 @@ grid-template-columns:1fr;
 .btn .fa-whatsapp {
     font-size: 20px;
     margin-right: 8px;
-}
-
-.hero,
-section,
-header,
-footer {
-    margin: 0;
-    padding: 0 8%;
-}
-
-.hero-text,
-.hero-card,
-.card,
-.center {
-    margin: 0;
-}
-
-.hero-card div {
-    margin-bottom: 20px;
-}
-
-.hero-card div:last-child {
-    margin-bottom: 0;
 }
