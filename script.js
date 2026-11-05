@@ -98,6 +98,57 @@ Object.assign(en,{
  contactNote:"Opens your email app. Review and press Send.",
  footerMsg:"From idea to product."
 });
+
+Object.assign(en, {
+ skipLink:"Skip to content",
+ navWhy:"How it works",navPaths:"Get started",navBuilder:"Explore the tool",
+ navContact:"Contact us ↗",
+ eyebrow:"SAZLER / DIGITAL PRODUCT STUDIO",
+ heroTitle:'Your path to building <span>your digital product</span> and launching with your expertise.',
+ heroDesc:"Have expertise but no product idea yet? We'll help you identify a suitable opportunity, create the product, and prepare its sales page and launch content.",
+ heroStart:"Start your journey ↗",heroTool:"Explore the tool ↗",
+ heroFootnote:"From finding your direction to taking the first real step.",
+ sceneLabel:"YOUR PRODUCT JOURNEY",scene1:"Find the opportunity",scene2:"Build the product",scene3:"Page and launch",heroIndex:"BUILD WITH PURPOSE",
+ whyEyebrow:"WHAT WE DO",whyTitle:'An idea is just the beginning. <span>We build what comes next.</span>',
+ whyDesc:"Product, sales page and content. Tailored to what you actually need, not fixed service packages.",
+ feature1Title:"Discover the right product",feature1Desc:"Turn your expertise into a testable opportunity, even without a product idea.",
+ feature2Title:"Build and prepare",feature2Desc:"An app, tool or downloadable product with a clear sales page.",
+ feature3Title:"Content and launch",feature3Desc:"Video editing, launch content and a practical plan to reach potential buyers.",
+ pathsEyebrow:"YOUR STARTING POINT",pathsTitle:"Start wherever you are.",
+ path1Title:"I have expertise, but no product idea yet.",
+ path1Desc:"Explore product directions based on your skills and who might need them.",
+ path1Cta:"Help me find my product ↗",
+ path2Title:"I have an idea and want to build it.",
+ path2Desc:"Try the planner or reach out to build and launch with us.",
+ path2Cta:"Explore the tool ↗",
+ builderEyebrow:"THE FREE PREVIEW",builderTitle:"Give your idea a shape.",
+ builderDesc:"If you have an initial idea, create an editable product draft, offer page and starter launch plan. These are not finished products.",
+ builderFree:"Free to explore",
+ formTitle:"Product details",labelExpertise:"What's your expertise?",labelAudience:"Who is it for?",
+ labelProblem:"What problem does it solve?",labelResult:"What result does the buyer get?",
+ labelSteps:"3 steps from your expertise <small>one per line</small>",
+ labelFormat:"Product format",labelPrice:"Test price (USD)",labelLink:"Buyer contact link <small>optional</small>",
+ formatGuide:"Guide / programme",formatToolkit:"Templates",formatCourse:"Workshop",formatTool:"Web tool",
+ generate:"Create draft ↗",formDisclaimer:"Rule-based starter drafts, not a complete product or a sales guarantee.",
+ resultTitle:"Your outputs",emptyTitle:"Your draft will appear here.",emptyDesc:"Complete the fields to get an editable starting point.",
+ outputLabel:"SUGGESTED PRODUCT",outlineTitle:"Inside your draft",validationTitle:"Test market interest",
+ downloadProduct:"Download product draft",downloadLanding:"Download offer page",downloadLaunch:"Download launch plan",
+ askBuild:"Want us to build it with you? Contact us ↗",
+ resultNote:"Review these files before selling. Payments are not enabled.",
+ requestEyebrow:"LET'S GET STARTED",
+ requestTitle:'Tell us about your expertise. <span>We’ll work out the next step together.</span>',
+ requestDesc:"No idea yet? Have something in mind? Need a sales page or content? Tell us where you are, and we'll discuss a tailored scope and price.",
+ contactName:"Your name or project",contactEmail:"Your email",contactType:"Where are you starting?",
+ helpDiscover:"I have expertise — help me find a product idea",
+ helpLaunch:"I have an idea — let's turn it into a product",
+ helpBuild:"Build my product or tool",
+ helpMarketing:"Sales page and launch content",
+ contactDetails:"Tell us a little about your situation",
+ contactSubmit:"Compose email ↗",
+ contactNote:"Opens your mail app with a prepared message. You'll need to press Send.",
+ footerMsg:"Your expertise. Your product. Your launch."
+});
+
 let lang = "ar", current = null;
 const labels = {
  guide:{ar:"دليل / برنامج رقمي",en:"digital guide / programme"},
@@ -281,6 +332,11 @@ contactForm.addEventListener("submit",e=>{
   "Please reply by email with next steps."
  ].join("\n");
  mailto(subject,body);
+});
+const discoverButton = document.getElementById("start-discovery");
+if (discoverButton) discoverButton.addEventListener("click", () => {
+  const select = document.getElementById("contact-help");
+  if (select) select.value = "discover";
 });
 try {const saved=localStorage.getItem("sazler-ui-language");setLang(saved==="en"?"en":"ar");}catch(_){setLang("ar");}
 })();
