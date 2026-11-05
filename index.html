@@ -1,241 +1,85 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07101d">
-  <meta name="description" content="SAZLER Launch OS — حول خبرتك إلى منتج رقمي وصفحة بيع وخطة إطلاق. جرّب إنشاء نموذج أولي أو اطلب من فريق SAZLER تنفيذه معك.">
-  <meta property="og:title" content="SAZLER Launch OS — من الخبرة إلى منتج قابل للبيع">
-  <meta property="og:description" content="منتج رقمي، صفحة بيع، ومحتوى إطلاق. ابدأ بالتجربة أو خلّينا نشتغل معك.">
-  <title>SAZLER Launch OS — من خبرتك إلى منتج قابل للبيع</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f7f2">
+<meta name="description" content="SAZLER يساعدك تبني منتجك الرقمي، صفحة بيعه، ومحتوى إطلاقه. جرّب الأداة أو احكِ معنا.">
+<title>SAZLER — من الفكرة إلى منتج رقمي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script defer src="script.js"></script>
 </head>
 <body>
-  <a class="skip" href="#builder">انتقل للأداة</a>
-  <div class="site-shell">
-    <header class="site-header">
-      <div class="wrap header-inner">
-        <a class="logo" href="#top" aria-label="SAZLER Home">
-          <span class="logo-mark">S<span class="logo-glint"></span></span>
-          <span class="logo-text">SAZLER <small>LAUNCH OS</small></span>
-        </a>
-        <nav aria-label="التنقل">
-          <a href="#why" data-i18n="navWhy">شو منقدّم؟</a>
-          <a href="#builder" data-i18n="navBuilder">جرّب الأداة</a>
-          <a href="#examples" data-i18n="navExamples">أمثلة</a>
-          <a href="#with-us" data-i18n="navHelp">نفّذه معنا</a>
-        </nav>
-        <div class="header-actions">
-          <button id="language" class="language" type="button" aria-label="Switch language">English</button>
-          <a class="header-button" href="#with-us" data-i18n="navContact">تواصل معنا <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </header>
-
-    <main id="top">
-      <section class="hero wrap">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="pulse"></span><span data-i18n="eyebrow">SAZLER / من الفكرة إلى الإطلاق</span></p>
-          <h1 data-i18n="heroTitle">عندك خبرة؟ <span class="gradient">خلّيها منتج رقمي الناس تقدر تشتريه.</span></h1>
-          <p class="hero-desc" data-i18n="heroDesc">سواء كنت مدرّب، خبير، أو صانع محتوى: جرّب تصنع نموذج أولي لمنتجك وصفحة بيعه وخطة إطلاقه. وإذا بدك تنفيذ حقيقي ومحتوى وتسويق، فيك تشتغل معنا مباشرة.</p>
-          <div class="hero-actions">
-            <a href="#builder" class="btn primary" data-i18n="heroTool">جرّب صناعة نموذج منتج <span aria-hidden="true">←</span></a>
-            <a href="#with-us" class="btn outline" data-i18n="heroDone">خلّينا ننفّذه معك</a>
-          </div>
-          <div class="hero-trust"><span data-i18n="trust1">✓ تجربة مجانية بلا تسجيل</span><span data-i18n="trust2">✓ نشتغل معك حسب مشروعك</span></div>
-        </div>
-        <div class="hero-media">
-          <img class="hero-photo" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1250&q=82" alt="فريق عمل يخطط وينفذ مشروع رقمي على أجهزة اللابتوب" fetchpriority="high">
-          <div class="photo-shade"></div>
-          <div class="hero-photo-label"><span class="mini-circle"></span><span data-i18n="heroPhoto">من فكرتك ← منتج ← صفحة بيع ← إطلاق</span></div>
-          <div class="float-card">
-            <div class="float-icon">↗</div>
-            <div><small>SAZLER / LAUNCH FLOW</small><strong data-i18n="floatText">مو خطة عالورق وبس.<br>بداية تنفيذ حقيقية.</strong></div>
-          </div>
-        </div>
-      </section>
-
-      <div class="wrap strip">
-        <span data-i18n="strip1">للخبراء والمدرّبين وصانعي المحتوى</span>
-        <span class="strip-sep" aria-hidden="true">✦</span>
-        <span data-i18n="strip2">فكرة واضحة</span>
-        <span class="strip-sep" aria-hidden="true">✦</span>
-        <span data-i18n="strip3">منتج أولي</span>
-        <span class="strip-sep" aria-hidden="true">✦</span>
-        <span data-i18n="strip4">صفحة بيع وتسويق</span>
-      </div>
-
-      <section id="why" class="section wrap">
-        <div class="section-heading">
-          <div><p class="eyebrow" data-i18n="whyEyebrow">الفرق</p><h2 data-i18n="whyTitle">نحنا ما منبيعك كلام عن البزنس. <span>منساعدك تبدأ ببناء الشي اللي رح تبيعه.</span></h2></div>
-          <p data-i18n="whyDesc">في منصات ممتازة لبيع المنتجات الجاهزة. المشكلة اللي منركز عليها هي الخطوة اللي قبل البيع: شو تصنع، كيف تقدمه، وكيف تجرّب الوصول لأول مهتمين.</p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature">
-            <span class="feature-index">01 / PRODUCT</span>
-            <span class="feature-symbol">◈</span>
-            <h3 data-i18n="feature1Title">منتج من خبرتك</h3>
-            <p data-i18n="feature1Desc">نحوّل المعرفة لشي ملموس: دليل، قوالب، برنامج عمل، أو أداة صغيرة حسب الفكرة.</p>
-          </article>
-          <article class="feature">
-            <span class="feature-index">02 / PAGE</span>
-            <span class="feature-symbol">▣</span>
-            <h3 data-i18n="feature2Title">صفحة تشرح وتبيع</h3>
-            <p data-i18n="feature2Desc">صفحة واضحة فيها النتيجة، محتوى المنتج، السعر، وطريقة تواصل أو شراء مناسبة.</p>
-          </article>
-          <article class="feature">
-            <span class="feature-index">03 / LAUNCH</span>
-            <span class="feature-symbol">↗</span>
-            <h3 data-i18n="feature3Title">إطلاق ومحتوى</h3>
-            <p data-i18n="feature3Desc">نجهّز اتجاه المحتوى ورسائل الوصول للجمهور. وإذا طلبت التنفيذ، منساعد بالمونتاج والتسويق.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="examples" class="section examples-section">
-        <div class="wrap">
-          <div class="section-heading stack">
-            <p class="eyebrow" data-i18n="examplesEyebrow">تخيّل منتجك</p>
-            <h2 data-i18n="examplesTitle">شو ممكن يتحول لمنتج رقمي؟</h2>
-            <p data-i18n="examplesDesc">هاي أمثلة توضيحية للفكرة، وليست أعمال عملاء أو مبيعات حققناها.</p>
-          </div>
-          <div class="example-grid">
-            <article class="example-card">
-              <div class="example-photo"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=950&q=80" loading="lazy" alt="تدريب ولياقة في صالة رياضية"></div>
-              <div class="example-content"><span data-i18n="example1Type">مدرّب لياقة</span><h3 data-i18n="example1Title">برنامج تمارين منزلي 30 يوم</h3><p data-i18n="example1Desc">ملف خطة، جدول يومي، صفحة عرض، ومحتوى للتعريف بالبرنامج.</p></div>
-            </article>
-            <article class="example-card">
-              <div class="example-photo"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=950&q=80" loading="lazy" alt="طعام صحي ومكوّنات تحضير الوصفات"></div>
-              <div class="example-content"><span data-i18n="example2Type">خبير تغذية</span><h3 data-i18n="example2Title">دليل تحضير وجبات أسبوعية</h3><p data-i18n="example2Desc">دليل عملي، قوائم تسوّق، وصفحة تسويقية للمنتج.</p></div>
-            </article>
-            <article class="example-card">
-              <div class="example-photo"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=950&q=80" loading="lazy" alt="مساحة عمل احترافية لمشروع رقمي"></div>
-              <div class="example-content"><span data-i18n="example3Type">خبير أعمال</span><h3 data-i18n="example3Title">عدة تنظيم مشروع صغير</h3><p data-i18n="example3Desc">قوالب قابلة للتعبئة، دليل استخدام، وصفحة عرض للعملاء المحتملين.</p></div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="builder" class="builder-section">
-        <div class="wrap">
-          <div class="builder-heading">
-            <div><p class="eyebrow"><span class="pulse"></span><span data-i18n="builderEyebrow">الأداة التفاعلية / تجربة مجانية</span></p><h2 data-i18n="builderTitle">جرّب تطلع بأول نسخة من فكرتك.</h2><p data-i18n="builderDesc">عبّي المعلومات من خبرتك أنت. الأداة بتجهّز مسودة منتج قابلة للتحرير، صفحة عرض HTML وخطة بداية للتسويق. ما بتستبدل كتابة المحتوى المتخصص أو اختبار الطلب الحقيقي.</p></div>
-            <div class="builder-label" data-i18n="builderLocal">🔒 مدخلاتك بتضل على جهازك</div>
-          </div>
-          <div class="workspace">
-            <form id="product-form" class="builder-form">
-              <div class="panel-head"><span>01 / INPUT</span><h3 data-i18n="formTitle">عرّفنا على فكرتك</h3></div>
-              <label for="expertise" data-i18n="labelExpertise">شو مهارتك أو خبرتك؟</label>
-              <input id="expertise" name="expertise" required maxlength="100" placeholder="مثلاً: تدريب لياقة للمبتدئين" data-placeholder="placeholderExpertise">
-              <label for="audience" data-i18n="labelAudience">مين الشخص اللي بدك تبيعله؟</label>
-              <input id="audience" name="audience" required maxlength="100" placeholder="مثلاً: ناس بدهم يتمرنوا بالبيت" data-placeholder="placeholderAudience">
-              <label for="problem" data-i18n="labelProblem">شو المشكلة اللي عنده؟</label>
-              <input id="problem" name="problem" required maxlength="160" placeholder="مثلاً: ما عنده وقت أو برنامج واضح" data-placeholder="placeholderProblem">
-              <label for="result" data-i18n="labelResult">شو النتيجة اللي بتقدر تقدملّه ياها؟</label>
-              <input id="result" name="result" required maxlength="160" placeholder="مثلاً: الالتزام ببرنامج 30 يوم" data-placeholder="placeholderResult">
-              <label for="steps" data-i18n="labelSteps">أهم 3 خطوات أو عناصر من معرفتك <small>كل خطوة بسطر</small></label>
-              <textarea id="steps" name="steps" required rows="3" maxlength="450" placeholder="تحديد المستوى المناسب&#10;جدول أسبوعي للتمارين&#10;متابعة التقدم" data-placeholder="placeholderSteps"></textarea>
-              <div class="form-grid">
-                <div><label for="format" data-i18n="labelFormat">نوع المنتج</label>
-                  <select name="format" id="format">
-                    <option value="guide" data-i18n="formatGuide">دليل / برنامج رقمي</option>
-                    <option value="toolkit" data-i18n="formatToolkit">قوالب وأوراق عمل</option>
-                    <option value="mini-course" data-i18n="formatCourse">ورشة أو محتوى تدريبي</option>
-                    <option value="tool" data-i18n="formatTool">أداة ويب بسيطة</option>
-                  </select>
-                </div>
-                <div><label for="price" data-i18n="labelPrice">السعر التجريبي بالدولار</label><input id="price" name="price" type="number" min="1" max="9999" value="29" required></div>
-              </div>
-              <label for="customer-link" data-i18n="labelLink">رابطك لاستقبال اهتمام المشترين <small>اختياري</small></label>
-              <input id="customer-link" name="customerLink" type="url" maxlength="400" placeholder="https://wa.me/... أو رابط تواصل">
-              <button class="btn primary full" type="submit" data-i18n="generate">أنشئ مسودة المنتج <span aria-hidden="true">←</span></button>
-              <p class="form-disclaimer" data-i18n="formDisclaimer">المخرجات قوالب عملية تعتمد على المعلومات اللي تدخلها، مو منتج كامل تلقائي ولا ضمان مبيعات. لا توجد مدفوعات على الصفحة.</p>
-            </form>
-            <div class="builder-result" id="result-panel" aria-live="polite">
-              <div class="panel-head"><span>02 / OUTPUT</span><h3 data-i18n="resultTitle">شوف شو رح تطلع معك</h3></div>
-              <div id="result-empty" class="result-empty">
-                <div class="result-ornament"><span>01</span><span>02</span><span>03</span></div>
-                <h4 data-i18n="emptyTitle">بدّل الفكرة لشي ممكن تعرضه عالناس.</h4>
-                <p data-i18n="emptyDesc">عبّي الخانات، وبنجهز لك مسودة محتوى وصفحة منتج ومخطط إطلاق تقدر تنزّلهم وتكمل عليهم.</p>
-                <div class="result-line"></div><div class="result-line short"></div><div class="result-line medium"></div>
-              </div>
-              <div id="result-done" hidden>
-                <p class="output-label" data-i18n="outputLabel">عرض المنتج الأولي</p>
-                <h3 id="output-name"></h3>
-                <p id="output-description" class="output-copy"></p>
-                <div class="outline-box"><h4 data-i18n="outlineTitle">داخل المسودة</h4><ol id="output-steps"></ol></div>
-                <p class="output-label" data-i18n="validationTitle">أول خطوة تسويقية</p><p id="output-pitch" class="output-copy"></p>
-                <div class="downloads">
-                  <button id="download-product" type="button" class="btn primary full" data-i18n="downloadProduct">تنزيل مسودة المنتج HTML</button>
-                  <button id="download-landing" type="button" class="btn secondary full" data-i18n="downloadLanding">تنزيل صفحة العرض HTML</button>
-                  <button id="download-launch" type="button" class="btn secondary full" data-i18n="downloadLaunch">تنزيل خطة الإطلاق TXT</button>
-                  <button id="ask-build" type="button" class="btn quiet full" data-i18n="askBuild">اطلب من SAZLER تنفيذ المشروع معك ↗</button>
-                </div>
-                <p id="result-status" role="status" class="result-status"></p>
-                <p class="form-disclaimer" data-i18n="resultNote">تحتاج مراجعة وتعديل قبل البيع. ملف الصفحة يعمل بدون سيرفر، وزر التواصل فيه يحتاج رابط تواصل حقيقي منك. الدفع غير مفعّل.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="with-us" class="section wrap assisted-section">
-        <div class="assisted-copy">
-          <p class="eyebrow" data-i18n="assistedEyebrow">ما بدك تنفّذ لحالك؟</p>
-          <h2 data-i18n="assistedTitle">منقدر نمسك الإطلاق معك. <span>من المنتج لصفحة البيع للمحتوى.</span></h2>
-          <p data-i18n="assistedDesc">بدل ما تدوّر على مبرمج ومونتير ومسوق كل واحد لحاله، بتناقشنا بفكرتك ومنحدد شو بتحتاج فعلياً: بناء المنتج، صفحة عرضه، تجهيز فيديوهات ومحتوى الإطلاق، وخطة للوصول لأول المهتمين. بنسعّر التنفيذ حسب نطاق العمل، بدون باقات جاهزة وبدون وعود بمبيعات مضمونة.</p>
-          <div class="assist-points">
-            <span data-i18n="assistedPoint1">✓ تصميم وبناء المنتج</span>
-            <span data-i18n="assistedPoint2">✓ صفحة عرض أو تطبيق حسب الحاجة</span>
-            <span data-i18n="assistedPoint3">✓ مونتاج ومحتوى تسويقي</span>
-            <span data-i18n="assistedPoint4">✓ دعم الإطلاق وخطة اكتساب العملاء</span>
-          </div>
-          <a class="btn primary" href="#request" data-i18n="assistedCta">احكي لنا عن مشروعك <span aria-hidden="true">←</span></a>
-        </div>
-        <div class="assisted-photo">
-          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1100&q=82" loading="lazy" alt="فريق عمل يناقش خطة إطلاق مشروع">
-          <div class="assisted-photo-caption"><strong>ONE PRODUCT. ONE LAUNCH.</strong><small data-i18n="assistedCaption">شغل عملي، مش وعود.</small></div>
-        </div>
-      </section>
-
-      <section id="request" class="request-section">
-        <div class="wrap request-grid">
-          <div>
-            <p class="eyebrow" data-i18n="requestEyebrow">خلّينا نحكي بمشروعك</p>
-            <h2 data-i18n="requestTitle">خبرنا شو بدك تطلع للعالم.</h2>
-            <p data-i18n="requestDesc">اكتب فكرتك والشي اللي بدك مساعدتنا فيه. الزر بيفتح مسودة رسالة بإيميلك فيها التفاصيل؛ ما منجمع بياناتك بصمت ولا منوهمك إنه الطلب انرسل تلقائياً.</p>
-            <div class="contact-meta"><span>SAZLER / PRODUCT LAUNCH</span><a href="mailto:nawar.business1@gmail.com">nawar.business1@gmail.com</a></div>
-          </div>
-          <form id="contact-form" class="contact-form">
-            <label for="contact-name" data-i18n="contactName">اسمك أو اسم مشروعك</label>
-            <input id="contact-name" name="contactName" maxlength="90" required placeholder="مثلاً: أحمد / مشروع مدرب">
-            <label for="contact-email" data-i18n="contactEmail">إيميلك للتواصل</label>
-            <input id="contact-email" name="contactEmail" type="email" maxlength="140" required placeholder="you@example.com">
-            <label for="contact-help" data-i18n="contactType">بأي مرحلة بدك نساعدك؟</label>
-            <select id="contact-help" name="contactHelp">
-              <option value="launch" data-i18n="helpLaunch">منتج رقمي من الفكرة للإطلاق</option>
-              <option value="build" data-i18n="helpBuild">بناء المنتج أو الأداة</option>
-              <option value="marketing" data-i18n="helpMarketing">صفحة البيع والمحتوى والتسويق</option>
-            </select>
-            <label for="contact-details" data-i18n="contactDetails">وصف مختصر لفكرتك</label>
-            <textarea id="contact-details" name="contactDetails" rows="4" required maxlength="1000" placeholder="شو عندك اليوم، وشو حابب نوصلله؟"></textarea>
-            <button type="submit" class="btn primary full" data-i18n="contactSubmit">جهّز رسالة التواصل <span aria-hidden="true">↗</span></button>
-            <p class="form-disclaimer" data-i18n="contactNote">راح يفتح تطبيق البريد عندك؛ لازم تضغط إرسال بنفسك.</p>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer class="footer wrap">
-      <a class="logo" href="#top"><span class="logo-mark">S<span class="logo-glint"></span></span><span class="logo-text">SAZLER <small>LAUNCH OS</small></span></a>
-      <p data-i18n="footerMsg">من الخبرة لمنتج يُختبر في السوق. بدون وعود ربح سريعة.</p>
-      <span>© 2026 SAZLER</span>
-      <p class="photo-credit" data-i18n="credit">صور توضيحية من Unsplash.</p>
-    </footer>
-  </div>
-</body>
-</html>
+<header class="header"><div class="wrap nav-wrap">
+<a href="#top" class="brand"><span class="mark">S</span><span>SAZLER<small>PRODUCT STUDIO</small></span></a>
+<nav><a href="#work" data-i18n="navWhy">كيف نشتغل</a><a href="#builder" data-i18n="navBuilder">الأداة</a><a href="#request" data-i18n="navHelp">تواصل معنا</a></nav>
+<div class="nav-actions"><button id="language" type="button" class="lang">English</button><a href="#request" class="nav-contact" data-i18n="navContact">احكِ عن فكرتك ↗</a></div>
+</div></header>
+<main id="top">
+<section class="hero wrap">
+<div class="hero-copy">
+<p class="eyebrow" data-i18n="eyebrow">SAZLER / PRODUCT STUDIO</p>
+<h1 data-i18n="heroTitle">عندك فكرة لمنتج رقمي؟ <span>خلّينا نبنيه.</span></h1>
+<p class="lead" data-i18n="heroDesc">منساعدك تحوّل خبرتك لمنتج فعلي، نجهّز صفحة بيعه ومحتوى إطلاقه. أو فيك تبدأ باستخدام أداتنا.</p>
+<div class="hero-actions"><a href="#request" class="btn dark" data-i18n="heroDone">ناقش مشروعك ←</a><a href="#builder" class="btn ghost" data-i18n="heroTool">جرّب الأداة ↗</a></div>
+</div>
+<figure class="hero-media">
+<img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85" alt="مساحة عمل هادئة لتطوير مشروع رقمي" fetchpriority="high">
+<figcaption><span data-i18n="heroPhoto">من الفكرة إلى شيء جاهز للعرض.</span><span>01 / 03</span></figcaption>
+</figure>
+</section>
+<section id="work" class="work"><div class="wrap">
+<div class="section-heading"><div><p class="index">01 / <span data-i18n="whyEyebrow">الطريقة</span></p><h2 data-i18n="whyTitle">نبدأ من المنتج. <span>مو من قائمة خدمات.</span></h2></div><p data-i18n="whyDesc">كل مشروع إله احتياجاته. منبني المطلوب ومنجهّز اللي بيساعده يوصل للسوق.</p></div>
+<div class="steps">
+<article><span>01</span><h3 data-i18n="feature1Title">نحدّد شو رح تبيع</h3><p data-i18n="feature1Desc">نتيجة واضحة، وجمهور محدد.</p></article>
+<article><span>02</span><h3 data-i18n="feature2Title">نبني المنتج وصفحته</h3><p data-i18n="feature2Desc">برمجة أو ملفات رقمية، وصفحة تعرضه.</p></article>
+<article><span>03</span><h3 data-i18n="feature3Title">نجهّز الإطلاق</h3><p data-i18n="feature3Desc">مونتاج ومحتوى وخطة وصول للعملاء.</p></article>
+</div>
+<div class="examples"><span data-i18n="examplesEyebrow">أمثلة</span><b data-i18n="example1Title">برنامج لمدرّب</b><b data-i18n="example2Title">أداة لخبير</b><b data-i18n="example3Title">منتج قابل للتنزيل</b></div>
+</div></section>
+<section id="builder" class="builder"><div class="wrap">
+<div class="section-heading builder-heading"><div><p class="index">02 / <span data-i18n="builderEyebrow">جرّب الأداة</span></p><h2 data-i18n="builderTitle">شوف شكل فكرتك قبل تنفيذها.</h2></div><p data-i18n="builderDesc">أدخل تفاصيل فكرتك، وخذ مسودة منتج وصفحة عرض وخطة إطلاق. الملفات أولية وقابلة للتعديل.</p></div>
+<div class="tool-grid">
+<form id="product-form" class="panel">
+<div class="panel-title"><h3 data-i18n="formTitle">عن فكرتك</h3><small>01 / INPUT</small></div>
+<label for="expertise" data-i18n="labelExpertise">شو خبرتك؟</label>
+<input id="expertise" name="expertise" maxlength="100" required placeholder="مثلاً: تدريب لياقة للمبتدئين" data-placeholder="placeholderExpertise">
+<label for="audience" data-i18n="labelAudience">مين رح يشتري منك؟</label>
+<input id="audience" name="audience" maxlength="100" required placeholder="مثلاً: ناس بدهم يتمرنوا بالبيت" data-placeholder="placeholderAudience">
+<label for="problem" data-i18n="labelProblem">شو المشكلة اللي بدك تحلّها؟</label>
+<input id="problem" name="problem" maxlength="160" required placeholder="مثلاً: ما عندهم خطة تمارين" data-placeholder="placeholderProblem">
+<label for="result" data-i18n="labelResult">شو النتيجة للعميل؟</label>
+<input id="result" name="result" maxlength="160" required placeholder="مثلاً: الالتزام ببرنامج 30 يوم" data-placeholder="placeholderResult">
+<label for="steps" data-i18n="labelSteps">3 خطوات من خبرتك <small>كل واحدة بسطر</small></label>
+<textarea id="steps" name="steps" rows="3" maxlength="450" required placeholder="تحديد المستوى&#10;جدول أسبوعي&#10;متابعة التقدم" data-placeholder="placeholderSteps"></textarea>
+<div class="fields"><div>
+<label for="format" data-i18n="labelFormat">نوع المنتج</label>
+<select id="format" name="format"><option value="guide" data-i18n="formatGuide">دليل / برنامج</option><option value="toolkit" data-i18n="formatToolkit">قوالب</option><option value="mini-course" data-i18n="formatCourse">ورشة تدريبية</option><option value="tool" data-i18n="formatTool">أداة ويب</option></select>
+</div><div><label for="price" data-i18n="labelPrice">السعر التجريبي (دولار)</label><input id="price" name="price" type="number" min="1" max="9999" value="29" required></div></div>
+<label for="customer-link" data-i18n="labelLink">رابط تواصل المشترين <small>اختياري</small></label><input id="customer-link" name="customerLink" type="url" maxlength="400" placeholder="https://wa.me/...">
+<button type="submit" class="btn dark fill" data-i18n="generate">أنشئ المسودة ←</button>
+<p class="note" data-i18n="formDisclaimer">الأداة بتنشئ مسودات بقواعد ثابتة، مو منتج مكتمل أو ضمان مبيعات.</p>
+</form>
+<div id="result-panel" class="panel results" aria-live="polite">
+<div class="panel-title"><h3 data-i18n="resultTitle">النتيجة</h3><small>02 / OUTPUT</small></div>
+<div id="result-empty" class="empty"><div class="empty-arrow">↗</div><h4 data-i18n="emptyTitle">مسودتك رح تظهر هون.</h4><p data-i18n="emptyDesc">عبّي الخانات لتشوف النتيجة.</p></div>
+<div id="result-done" hidden>
+<p class="micro" data-i18n="outputLabel">المنتج المقترح</p><h3 id="output-name"></h3><p id="output-description" class="result-copy"></p>
+<div class="outline"><h4 data-i18n="outlineTitle">محتوى المسودة</h4><ol id="output-steps"></ol></div>
+<p class="micro" data-i18n="validationTitle">خطوة لاختبار الطلب</p><p id="output-pitch" class="result-copy"></p>
+<div class="download-actions"><button id="download-product" type="button" class="btn dark fill" data-i18n="downloadProduct">تنزيل مسودة المنتج</button><button id="download-landing" type="button" class="btn light fill" data-i18n="downloadLanding">تنزيل صفحة العرض</button><button id="download-launch" type="button" class="btn light fill" data-i18n="downloadLaunch">تنزيل خطة الإطلاق</button><button id="ask-build" type="button" class="inline-cta" data-i18n="askBuild">خلّينا ننفّذ المشروع معك ↗</button></div>
+<p id="result-status" role="status"></p><p class="note" data-i18n="resultNote">الملفات تحتاج مراجعة وتعديل قبل البيع. ما في دفع مدمج.</p>
+</div></div></div></div></section>
+<section id="request" class="contact wrap">
+<div class="contact-copy"><p class="index">03 / <span data-i18n="requestEyebrow">تواصل</span></p><h2 data-i18n="requestTitle">بدك ننفّذ فكرتك معك؟</h2><p data-i18n="requestDesc">احكِ لنا شو بدك تبني. منحدد معك التنفيذ والسعر حسب المشروع، بلا باقات ثابتة.</p><div class="contact-services" data-i18n="assistedPoint1">برمجة · صفحة بيع · مونتاج · تسويق</div><a class="contact-email" href="mailto:nawar.business1@gmail.com">nawar.business1@gmail.com</a></div>
+<form id="contact-form" class="contact-form">
+<label for="contact-name" data-i18n="contactName">اسمك أو اسم مشروعك</label><input id="contact-name" name="contactName" maxlength="90" required placeholder="اسمك">
+<label for="contact-email" data-i18n="contactEmail">إيميلك</label><input id="contact-email" name="contactEmail" type="email" maxlength="140" required placeholder="you@example.com">
+<label for="contact-help" data-i18n="contactType">بأي مرحلة بدك مساعدة؟</label><select id="contact-help" name="contactHelp"><option value="launch" data-i18n="helpLaunch">من الفكرة للإطلاق</option><option value="build" data-i18n="helpBuild">بناء منتج أو أداة</option><option value="marketing" data-i18n="helpMarketing">صفحة البيع والمحتوى</option></select>
+<label for="contact-details" data-i18n="contactDetails">فكرتك باختصار</label><textarea id="contact-details" name="contactDetails" rows="3" maxlength="1000" required placeholder="شو بدك تنفّذ؟"></textarea>
+<button type="submit" class="btn dark fill" data-i18n="contactSubmit">جهّز رسالة التواصل ↗</button><p class="note" data-i18n="contactNote">بيفتح إيميلك لتراجع الرسالة وتضغط إرسال.</p>
+</form></section>
+</main>
+<footer><div class="wrap footer"><a href="#top" class="brand"><span class="mark">S</span><span>SAZLER<small>PRODUCT STUDIO</small></span></a><span data-i18n="footerMsg">من الفكرة للمنتج.</span><span>© 2026 SAZLER</span></div></footer>
+</body></html>
