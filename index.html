@@ -41,20 +41,31 @@
      <a class="btn gold" href="#paths" data-i18n="heroStart">ابدأ رحلتك <span aria-hidden="true">←</span></a>
      <a class="btn dark-outline" href="#builder" data-i18n="heroTool">جرّب الأداة <span aria-hidden="true">↗</span></a>
     </div>
-    <p class="hero-footnote" data-i18n="heroFootnote">من اختيار الفكرة إلى أول خطوة فعلية.</p>
+    <p class="hero-footnote" data-i18n="heroFootnote">تجربة أولية مجاناً · تنفيذ كامل مع فريق SAZLER حسب الحاجة</p>
    </div>
-   <div class="hero-scene">
-    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85" alt="استوديو عمل أنيق لتطوير المنتجات الرقمية" fetchpriority="high">
-    <div class="scene-tint"></div>
-    <div class="scene-overlay">
-      <span class="scene-tag">SAZLER / WORKSPACE</span>
-      <div class="scene-card">
-       <span class="scene-kicker" data-i18n="sceneLabel">رحلة منتجك</span>
-       <div class="scene-item"><span class="step-index">01</span><span data-i18n="scene1">اكتشاف الفرصة</span><span class="scene-dot"></span></div>
-       <div class="scene-item"><span class="step-index">02</span><span data-i18n="scene2">بناء المنتج</span><span class="scene-dot"></span></div>
-       <div class="scene-item"><span class="step-index">03</span><span data-i18n="scene3">الصفحة والإطلاق</span><span class="scene-dot"></span></div>
-      </div>
-    </div>
+   <div class="hero-scene product-showcase" aria-label="معاينة توضيحية لنوع المنتج الرقمي">
+     <div class="showcase-ambient" aria-hidden="true"></div>
+     <div class="showcase-note"><span class="showcase-dot"></span><span data-i18n="sampleLabel">مثال توضيحي للمنتج، مش مجرد كلام</span></div>
+     <div class="sample-cover">
+       <div class="sample-top"><span>SAZLER <em>PRODUCT PREVIEW</em></span><span>01 / 04</span></div>
+       <div class="sample-body">
+         <div class="sample-kicker" data-i18n="sampleKicker">DIGITAL WORKBOOK</div>
+         <h3 data-i18n="sampleTitle">عدّة تنظيم المحتوى<br>للمشاريع الصغيرة</h3>
+         <p data-i18n="sampleDesc">نموذج ملف عملي مع صفحات تنفيذ وتتبع تقدّم، مو PDF فاضي.</p>
+         <div class="sample-rule"></div>
+         <div class="sample-page-meta"><span data-i18n="samplePage1">خطة العمل</span><span data-i18n="samplePage2">المتابعة</span><span data-i18n="samplePage3">صفحة البيع</span></div>
+       </div>
+       <div class="sample-bottom"><span>SAZLER STUDIO</span><span>EDITABLE / 2026</span></div>
+     </div>
+     <div class="sample-paper" aria-hidden="true">
+       <span>YOUR ACTION PLAN</span>
+       <div class="sample-check">✓ <i></i></div>
+       <div class="sample-check">○ <i></i></div>
+       <div class="sample-check">○ <i></i></div>
+       <div class="sample-check">○ <i></i></div>
+       <div class="sample-chart"><b></b><b></b><b></b><b></b><b></b></div>
+       <div class="sample-paper-foot">WORKBOOK / 02</div>
+     </div>
    </div>
   </div>
   <div class="wrap hero-index"><span>SAZLER — 2026</span><span data-i18n="heroIndex">BUILD WITH PURPOSE</span></div>
@@ -99,11 +110,12 @@
    <div class="builder-heading"><div>
     <p class="kicker"><span>03 /</span> <span data-i18n="builderEyebrow">الأداة التجريبية</span></p>
     <h2 data-i18n="builderTitle">خلّي فكرتك تاخد شكل.</h2>
-    <p data-i18n="builderDesc">إذا عندك تصور مبدئي، جرّب تولّد مسودة منتج وصفحة عرض وخطة إطلاق. المخرجات قابلة للتعديل، وليست منتجاً نهائياً.</p>
+    <p data-i18n="builderDesc">شوف مثال جاهز أو اكتب تفاصيل منتجك، وخذ ملف عمل تفاعلي وصفحة عرض وخطة إطلاق أولية.</p>
    </div><span class="free-mark" data-i18n="builderFree">مجانية للتجربة</span></div>
    <div class="tool-grid">
     <form id="product-form" class="tool-card">
       <div class="tool-header"><h3 data-i18n="formTitle">تفاصيل المنتج</h3><span>01 / INPUT</span></div>
+      <button id="try-example" class="demo-link" type="button" data-i18n="tryExample">جرّب مثال جاهز أولاً ↗</button>
       <label for="expertise" data-i18n="labelExpertise">شو خبرتك؟</label>
       <input id="expertise" name="expertise" maxlength="100" required placeholder="مثلاً: تدريب لياقة للمبتدئين" data-placeholder="placeholderExpertise">
       <label for="audience" data-i18n="labelAudience">لمين المنتج؟</label>
@@ -137,16 +149,19 @@
        <div class="skeleton"><i></i><i></i><i></i></div></div>
      <div id="result-done" hidden>
        <p class="output-label" data-i18n="outputLabel">المنتج المقترح</p><h3 id="output-name"></h3><p id="output-description" class="output-copy"></p>
+       <div class="kit-preview" id="kit-preview"><div class="kit-preview-cover"><span>SAZLER / PRODUCT KIT</span><strong id="kit-preview-title"></strong><small data-i18n="kitPreviewSmall">ملف تفاعلي للتنفيذ والمتابعة</small></div><div class="kit-preview-pages"><span data-i18n="kitPreviewOne">01 — خطوات العمل</span><span data-i18n="kitPreviewTwo">02 — أوراق تطبيق</span><span data-i18n="kitPreviewThree">03 — تتبع التقدم</span></div></div>
        <div class="result-outline"><h4 data-i18n="outlineTitle">محتوى المسودة</h4><ol id="output-steps"></ol></div>
        <p class="output-label" data-i18n="validationTitle">خطوة لاختبار الطلب</p><p id="output-pitch" class="output-copy"></p>
        <div class="downloads">
+        <button id="preview-product" type="button" class="btn gold full" data-i18n="previewProduct">شاهد المنتج قبل تنزيله ↗</button>
         <button id="download-product" type="button" class="btn gold full" data-i18n="downloadProduct">تنزيل مسودة المنتج</button>
+        <button id="preview-landing" type="button" class="btn subtle full" data-i18n="previewLanding">شاهد صفحة البيع ↗</button>
         <button id="download-landing" type="button" class="btn subtle full" data-i18n="downloadLanding">تنزيل صفحة العرض</button>
         <button id="download-launch" type="button" class="btn subtle full" data-i18n="downloadLaunch">تنزيل خطة الإطلاق</button>
         <button id="ask-build" type="button" class="plain-link" data-i18n="askBuild">بدك ننفّذه معك؟ تواصل معنا ↗</button>
        </div>
        <p id="result-status" role="status" class="status"></p>
-       <p class="tool-disclaimer" data-i18n="resultNote">الملفات بحاجة مراجعة قبل البيع. الدفع غير مفعّل.</p>
+       <p class="tool-disclaimer" data-i18n="resultNote">النموذج قابل للتجربة والتعديل، لكن المحتوى المتخصص لازم تضيفه من خبرتك قبل البيع. الدفع غير مفعّل.</p>
      </div>
     </div>
    </div>
