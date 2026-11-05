@@ -61,6 +61,43 @@ const en = {
  placeholderProblem:"e.g. no time or training routine",placeholderResult:"e.g. stick to a 30-day training plan",
  placeholderSteps:"Assess their starting level\nCreate a weekly plan\nTrack progress"
 };
+
+Object.assign(en,{
+ navWhy:"How we work",navBuilder:"Try the tool",navHelp:"Contact",navContact:"Discuss your idea ↗",
+ eyebrow:"SAZLER / PRODUCT STUDIO",
+ heroTitle:'Have a digital product in mind? <span>Let’s build it.</span>',
+ heroDesc:"We turn expertise into a real digital product, its sales page and launch content. Or start yourself with our free tool.",
+ heroDone:"Discuss your project ↗",heroTool:"Try the tool ↗",
+ heroPhoto:"From idea to a product you can show.",
+ whyEyebrow:"APPROACH",
+ whyTitle:'Start with the product. <span>Not a list of services.</span>',
+ whyDesc:"Every project is different. We build what it needs to reach real customers.",
+ feature1Title:"Define the product",feature1Desc:"One clear outcome. One specific buyer.",
+ feature2Title:"Build it and its page",feature2Desc:"Software or digital files, with a straightforward offer page.",
+ feature3Title:"Prepare the launch",feature3Desc:"Video editing, content and a plan to reach prospects.",
+ examplesEyebrow:"FOR EXAMPLE",example1Title:"A coach's programme",example2Title:"An expert's small tool",example3Title:"A downloadable resource",
+ builderEyebrow:"FREE TOOL",builderTitle:"See your idea before building it.",
+ builderDesc:"Enter your idea and get a product draft, an offer page and a simple launch plan. All editable starter files.",
+ formTitle:"Your idea",labelExpertise:"What do you know?",labelAudience:"Who would buy this?",
+ labelProblem:"What problem will it solve?",labelResult:"What outcome will the buyer get?",
+ labelSteps:"3 steps from your expertise <small>one per line</small>",
+ labelFormat:"Product type",labelPrice:"Test price (USD)",labelLink:"Buyer contact link <small>optional</small>",
+ formatGuide:"Guide / programme",formatToolkit:"Templates",formatCourse:"Workshop",formatTool:"Web tool",
+ generate:"Create draft ↗",formDisclaimer:"Rule-based drafts, not a finished product or guaranteed sales.",
+ resultTitle:"Result",emptyTitle:"Your draft will appear here.",emptyDesc:"Fill in the fields to see the initial output.",
+ outputLabel:"SUGGESTED PRODUCT",outlineTitle:"Draft contents",validationTitle:"Demand test",
+ downloadProduct:"Download product draft",downloadLanding:"Download offer page",downloadLaunch:"Download launch plan",
+ askBuild:"Want us to build it with you? ↗",
+ resultNote:"Review and edit files before selling. Payments are not integrated.",
+ requestEyebrow:"CONTACT",requestTitle:"Want us to build this with you?",
+ requestDesc:"Tell us what you're creating. We'll scope the work and price it for your project, with no fixed packages.",
+ assistedPoint1:"Development · sales page · video editing · marketing",
+ contactName:"Your name or project",contactEmail:"Your email",contactType:"Where do you need help?",
+ helpLaunch:"From idea to launch",helpBuild:"Build a product or tool",helpMarketing:"Sales page and content",
+ contactDetails:"Your idea, briefly",contactSubmit:"Prepare email ↗",
+ contactNote:"Opens your email app. Review and press Send.",
+ footerMsg:"From idea to product."
+});
 let lang = "ar", current = null;
 const labels = {
  guide:{ar:"دليل / برنامج رقمي",en:"digital guide / programme"},
