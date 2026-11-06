@@ -89,16 +89,13 @@
 <div class="trap" aria-hidden="true"><label for="companyWebsite">اترك هذا الحقل فارغاً</label><input id="companyWebsite" type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
 <div class="form-section-title"><span>01</span> بيانات التواصل</div>
 <div class="field-row">
-<div class="field"><label for="fullName">الاسم الكامل <span class="required">*</span></label><input id="fullName" type="text" name="name" placeholder="اسمك الكامل" autocomplete="name" required minlength="2" maxlength="80"></div>
+<div class="field"><label for="fullName">الاسم <span class="required">*</span></label><input id="fullName" type="text" name="name" placeholder="اسمك" autocomplete="name" required minlength="2" maxlength="80"></div>
 <div class="field"><label for="email">البريد الإلكتروني <span class="required">*</span></label><input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email" inputmode="email" dir="ltr" required maxlength="150"></div>
 </div>
 <div class="field"><label for="whatsapp">رقم واتساب <span class="optional">اختياري</span></label><input id="whatsapp" type="tel" name="whatsapp" placeholder="+968 0000 0000" autocomplete="tel" inputmode="tel" dir="ltr" maxlength="28"></div>
 <div class="form-section-title"><span>02</span> تفاصيل مشروعك</div>
-<div class="field-row">
 <div class="field"><label for="type">نوع المشروع <span class="required">*</span></label><select id="type" name="project_type" required><option value="" disabled selected>اختر نوع المشروع</option><option value="منتج رقمي">منتج رقمي</option><option value="نظام لبيع الخبرات والكورسات">نظام لبيع الخبرات والكورسات</option><option value="تطبيق أو منصة رقمية">تطبيق أو منصة رقمية</option><option value="مساعدة في اختيار فكرة مشروع">بدي مساعدة باختيار الفكرة</option><option value="مشروع آخر">مشروع آخر</option></select></div>
-<div class="field"><label for="budget">الميزانية التقريبية <span class="optional">اختياري</span></label><select id="budget" name="estimated_budget"><option value="غير محددة" selected>لسّا ما حدّدتها</option><option value="أقل من 500 دولار">أقل من $500</option><option value="500 إلى 1500 دولار">$500 – $1,500</option><option value="1500 إلى 5000 دولار">$1,500 – $5,000</option><option value="أكثر من 5000 دولار">أكثر من $5,000</option></select></div>
-</div>
-<div class="field"><label for="description">احكيلي عن فكرتك <span class="required">*</span></label><textarea id="description" name="project_details" rows="5" minlength="20" maxlength="2500" required placeholder="شو حابب تبني؟ مين العملاء اللي حابب توصل إلهم؟ وإذا عندك فكرة عن الميزات المطلوبة اذكرها هون."></textarea><div class="field-help">20 حرف على الأقل — ما ضروري تكون الفكرة مكتملة.</div></div>
+<div class="field"><label for="description">تفاصيل إضافية <span class="optional">اختياري</span></label><textarea id="description" name="project_details" rows="5" maxlength="2500" placeholder="اخبرني أكثر"></textarea></div>
 <label class="privacy-check"><input type="checkbox" id="contactConsent" name="contact_consent" value="أوافق على التواصل بخصوص طلبي" required><span>بوافق على استخدام المعلومات اللي قدّمتها للتواصل معي بخصوص طلبي، وإرسالها بشكل آمن عبر خدمة نماذج خارجية.</span></label>
 <button type="submit" class="btn btn-primary form-submit" id="submitProject"><span class="submit-label">إرسال طلب المشروع</span><span class="arr" aria-hidden="true">↗</span></button>
 <p class="form-hint"><span aria-hidden="true">🔒</span> ما في أي دفع بهالمرحلة، ولا حاجة لمكالمة.</p>
@@ -115,8 +112,7 @@ e.preventDefault();
 if(sendButton.disabled||!f.reportValidity())return;
 if(f.elements['_honey'].value.trim())return;
 const firstName=(f.elements['name'].value||'').trim();
-const description=(f.elements['project_details'].value||'').trim();
-if(firstName.length<2||description.length<20){showFeedback('error','تأكد من كتابة الاسم ووصف الفكرة بشكل كافي.');return;}
+if(firstName.length<2){showFeedback('error','تأكد من كتابة الاسم بشكل صحيح.');return;}
 sendButton.disabled=true;sendButton.setAttribute('aria-busy','true');sendButton.querySelector('.submit-label').textContent='جارٍ إرسال الطلب...';
 feedback.hidden=true;
 try{
